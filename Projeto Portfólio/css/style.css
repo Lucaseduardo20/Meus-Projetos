@@ -125,6 +125,15 @@ body {
     animation-duration: 4s;
 }
 
+#divulgacao a {
+    color: #f27609;
+    font-weight: bold;
+}
+
+#divulgacao a:hover {
+    color: #fff;
+}
+
 .cv-pic{
     float: left;
     width: 280px;
