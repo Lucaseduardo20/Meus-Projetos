@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+    <main>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <div class="buttons">
+                <button onclick="clean()">C</button>
+                <button onclick="back()">&lt;</button>
+                <button onclick="insert('/')">/</button>
+                <button onclick="insert('*')">X</button>
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('-')">-</button>
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('+')">+</button>
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+                <button class="igual" type="submit" onclick="calcular()">=</button>
+                <button class="zero" onclick="insert('0')">0</button>
+                <button onclick="insert('.')">.</button>
+            </div>
+        </div>
+    </main>       
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
