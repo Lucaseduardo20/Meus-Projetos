@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url(../img/background-body.jfif);
+}
+body main {
+    margin: auto;
+    width: 50%;
+    background: url(../img/background-pizza.jpg);
+    height: 100vh;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #996633;
+    margin: 0 0 90px 0 ;
+}
+
+
+header ul li {
+    list-style: none;
+}
+
+section {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section form ul li {
+    list-style: none;
+    margin: 15px auto;
+    width: 40%;
+}
+
+section form ul li:hover {
+    border: 1px solid #996633;
+}
+
+section form ul li label {
+    font-size: 22px;
+}
+
+
+section button {
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #996633;
+    color: white;
+}
+
+section button:hover {
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#sabores {
+    width: 60%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 2px solid #996633;
+    padding: 20px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: 30px;
+}
