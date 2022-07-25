@@ -1,0 +1,122 @@
+body {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid #3dc03d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#87ceeb), to(#e0f6ff));
+  background: linear-gradient(#87ceeb, #e0f6ff);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+body .game-board .pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  -webkit-animation: pipe-animation 1.5s infinite linear;
+          animation: pipe-animation 1.5s infinite linear;
+}
+
+@-webkit-keyframes pipe-animation {
+  0% {
+    right: -80px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes pipe-animation {
+  0% {
+    right: -80px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+body .game-board .mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 150px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  90% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 150px;
+  }
+  50% {
+    bottom: 150px;
+  }
+  90% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+body .game-board .jump {
+  -webkit-animation: jump 500ms ease-out;
+          animation: jump 500ms ease-out;
+}
+
+body .game-board .clouds {
+  width: 550px;
+  position: absolute;
+  -webkit-animation: clouds-animation 15s infinite linear;
+          animation: clouds-animation 15s infinite linear;
+}
+
+@-webkit-keyframes clouds-animation {
+  0% {
+    right: -550px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes clouds-animation {
+  0% {
+    right: -550px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

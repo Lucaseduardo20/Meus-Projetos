@@ -1,0 +1,57 @@
+@import mixins
+	
+body
+	background: white
+	@include flex-center
+
+	.game-board
+		width: 100%
+		height: 500px
+		border-bottom: 15px solid #3dc03d
+		background: linear-gradient(#87ceeb, #e0f6ff)
+		margin: 0 auto
+		position: relative
+		overflow: hidden
+
+		.pipe
+			position: absolute
+			bottom: 0
+			width: 80px
+			animation: pipe-animation 1.5s infinite linear
+
+			@keyframes pipe-animation
+				0%
+					right: -80px
+				100%
+					right: 100%
+
+		.mario		
+			width: 150px
+			position: absolute
+			bottom: 0
+
+			@keyframes jump
+				0%
+					bottom: 0
+				40%
+					bottom: 150px	
+				50%
+					bottom: 150px
+				90%
+					bottom: 150px	
+				100%
+					bottom: 0px
+
+		.jump 
+			animation: jump 500ms ease-out
+
+		.clouds 
+			width: 550px
+			position: absolute
+			animation: clouds-animation 15s infinite linear
+
+			@keyframes clouds-animation
+				0%
+					right: -550px
+				100%
+					right: 100%
